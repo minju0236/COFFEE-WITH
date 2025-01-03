@@ -1,0 +1,313 @@
+/* 마진 패딩 초기화 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 페이지 기본 글꼴과 크기 설정 */
+body {
+    font-size: 14px;
+    min-width: 1000px;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* <a> 태그 기본 설정 */
+a {
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:active {
+    text-decoration: none;
+    color: #222222;
+}
+
+/* 상단 헤더 */
+header {
+    background-color: #faf7f4;
+    position:relative;
+    height: 100px;
+}
+
+#top {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top .title {
+    width: 90px;
+    margin-left: 20px;
+}
+
+#top .signInLogin {
+    margin-right: 50px;
+}
+
+#top .signInLogin:hover {
+    text-decoration: underline;
+}
+
+#top #top_menu {
+    float: right;
+}
+
+#top #top_menu li {
+    display: inline;
+}
+
+.menu_bar {
+    width:100%;
+    display: flex;
+    height: 50px;
+    position:absolute;
+    bottom:0px;
+}
+
+#menu_bar {
+    margin: auto;
+    width: 600px;
+    font-size: 16px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.dropdown {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.dropdown-button {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    width: 120px;
+    color: #222222;
+    background-color: #2C2A29;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: max-height 0.6s ease-out;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content:hover .dropdown-button:hover,
+.dropdown:hover .dropdown-button {
+    background-color: #2C2A29;
+    color: #EADBC8;
+}
+
+.dropdown.open .dropdown-content {
+    max-height: 200px; /* 충분히 큰 값*/
+    z-index: 1;
+}
+
+/* 메인 이미지 */
+#main_img_bar {
+    background-color: #03282D;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner1 {
+    height: 526.34px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_november_pick_bg.jpg) center center fixed no-repeat #45434c;
+    background-size: auto 87%;
+    padding: 0;
+    position: relative;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner2 {
+    height: 526.34px;
+    background: url("../img/coffeeBanner3.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img1 {
+    width: 220px;
+    height: 100%;
+    left: calc(50% - 320px);
+    position: absolute;
+    opacity: 0; /* 기본 상태: 보이지 않음 */
+    transform: translateX(-20%);
+}
+
+.img1.active {
+    animation-name: slideInLeft;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.img2 {
+    width: 500px;
+    height: 400px;
+    right: calc(50% - 400px);
+    top:130px;
+    position: absolute;
+    opacity: 0; /* 기본 상태: 보이지 않음 */
+    transform: translateX(20%);
+}
+
+.img2.active {
+    animation-name: slideInRight;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.img3 {
+    width: 600px;
+    height: 380px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0; /* 기본 상태: 보이지 않음 */
+    transform: translateY(10%); /* 기본 상태: 아래로 이동 */
+}
+
+.img3.active {
+    animation-name: slideInBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* 슬라이드 애니메이션 정의 */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#main_content {
+    height: 500px;
+    position: relative;
+}
+
+/* 하단 푸터 */
+footer {
+    height: 150px;
+    background-color: #2C2A29;
+}
+
+#footer_content {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 14px;
+}
+
+#footer_logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+#footer_logo span {
+    color: #f4f4f2;
+}
+
+#download {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+}
+
+#footer_logo span {
+    color: #DAC0A3;
+}
+
+li {
+    font-size: 12px;
+}
+
+#author {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+}
+
+.footer_logo_title {
+    color: #f4f4f2;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

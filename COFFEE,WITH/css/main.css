@@ -1,0 +1,144 @@
+/* 메인 콘텐트 */
+#main_content {
+    height: 100%;
+    margin: 0 auto;
+}
+
+#latest {
+    padding: 50px 0px 150px 0px;
+    width: 100%;
+    min-width: 1000px;
+    height: 200px;
+    background: url(https://www.starbucks.co.kr/common/img/whatsnew/promotion_bimg2.jpg
+    ) 80% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#table {
+    margin-left: 80px;
+}
+
+#latest h4 {
+    width: 700px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#latest ul {
+    margin-top: 15px;
+}
+
+#latest li {
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#latest span {
+    display: inline-block;
+}
+
+#latest span:nth-child(1) {
+    width: 300px;
+}
+
+#latest span:nth-child(2) {
+    width: 150px;
+}
+
+#latest span:nth-child(3) {
+    width: 150px;
+}
+
+#latest-title {
+    display: flex;
+    width: 600px;
+    padding: 5px;
+    border-top: solid 1px #727E91;
+    border-bottom: solid 1px #727E91;
+    font-size: 13px;
+}
+
+#latest-title-1 {
+    margin-left: 130px;
+}
+
+#latest-title-2 {
+    margin-left: 157px;
+}
+
+#latest-title-3 {
+    margin-left: 122px;
+}
+
+#latest_2 {
+    position: absolute;
+    top: 320px;
+    left: 550px;
+}
+
+#latest_2_btn {
+    border: solid 1px #4B3333;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+}
+
+#latest_2_btn:hover {
+    border: solid 1px #4B3333;
+    background-color: #4B3333;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+#point_rank {
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 200px;
+    background: url(https://www.starbucks.co.kr/common/img/whatsnew/promotion_bimg3.jpg) 20% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+}
+
+#table2 {
+    position: absolute;
+    right: 80px;
+}
+
+#point_rank h4 {
+    width: 400px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #dddddd;
+}
+
+#point_rank ul {
+    margin-top: 20px;
+}
+
+#point_rank li {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#point_rank span {
+    display: inline-block;
+}
+
+#point_rank span:nth-child(1) {
+    width: 70px;
+}
+
+#point_rank span:nth-child(2) {
+    width: 120px;
+}
+
+#point_rank span:nth-child(3) {
+    width: 120px;
+}
+
+#point_rank span:nth-child(4) {
+    width: 120px;
+}
